@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>GambyAha</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <h1>GambyAha</h1>
+            <li><a href="#inserir">Inserir</a></li>
+            <li><a href="#listar">Listar</a></li>
+            <li><a href="#">Excluir</a></li>
+        </ul>
+    </header>
+    <div id="inserir">
+        <form method="POST" action="/">
+            <h1>Cadastro</h1>
+            <label>Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label>Foto Perfil:</label>
+            <input type="file" name="arq" id="arq">
+            <br>
+            <label>Salário:</label>
+            <input type="number" name="salario" id="salario"> 
+            <br>
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" value="M"/>M
+            <input type="radio" name="sexo" value="F"/>F
+            <br> 
+            <label>Idade:</label>
+            <input type="number" name="idade" id="idade">
+            <input type="submit" value="Cadastrar" >
+        </form>
+    </div>
+    <br>
+    <div id="listar">
+        <table id="listagem">
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Foto Perfil</th>
+                <th>Salário</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Juao</td>
+                <td><img src="koala.jpg" alt="Koala"></td>
+                <td>100</td>
+                <td>M</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Matheus</td>
+                <td><img src="cachorro.jpg" alt="Cachorro"></td>
+                <td>100</td>
+                <td>M</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Natália</td>
+                <td><img src="gato2.jpg" alt="Gato"></td>
+                <td>100000</td>
+                <td>F</td>
+                <td>18</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p>BCC - Ciência da Computação</p>
+        <p>Feito por João Vitor de Oliveira, Matheus Martinenghi e Natália Sens Weise.</p>
+    </footer>
+    </body>
+</html>
